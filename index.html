@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sam Scheinbach | Engineering Portfolio</title>
+  <meta name="description" content="Robotics, mechanical design, and embedded systems projects by Sam Scheinbach, University of Rochester.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header wrap">
+    <a class="logo" href="index.html">sam.scheinbach</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-text">
+        <div class="eyebrow">Mechanical Engineering · ECE Minor · University of Rochester</div>
+        <h1>Sam Scheinbach</h1>
+        <p>I build robots and the electronics that make them move, from lunar excavators to insect inspired legs and whisker sensors for underwater perception.</p>
+        <div class="buttons">
+          <a class="btn btn-dark" href="#projects">View projects</a>
+          <a class="btn btn-line" href="files/resume.pdf">Resume</a>
+        </div>
+      </div>
+      <!-- PHOTO: save your hero photo as images/hero.jpg, then replace the div below with:
+           <img class="hero-photo" src="images/hero.jpg" alt="Sam with the Lunabotics robot"> -->
+      <div class="placeholder ratio-4x3">Hero photo goes here<br>images/hero.jpg</div>
+    </section>
+
+    <section id="projects" class="section wrap">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <span class="count">05 entries</span>
+      </div>
+
+      <div class="cards">
+
+        <a class="card" href="projects/lunabotics.html">
+          <!-- <img class="card-media" src="images/lunabotics/cover.jpg" alt="Lunabotics robot"> -->
+          <div class="placeholder ratio-16x9">images/lunabotics/cover.jpg</div>
+          <div class="card-body">
+            <div class="eyebrow">UR Robotics Club · 2024 to present</div>
+            <h3>UR Robotics Club: Lunabotics</h3>
+            <p>President of the team building a lunar construction robot for NASA's Lunabotics competition at Kennedy Space Center. I wrote the swerve drive firmware, a ROS2 teleop node, and compressed camera streaming, and earlier designed PCBs and the electronics housing.</p>
+            <div class="chips">
+              <span class="chip">ROS2 C++</span>
+              <span class="chip">Arduino</span>
+              <span class="chip">BLDC control</span>
+              <span class="chip">PCB design</span>
+            </div>
+            <span class="card-link">Read the build log →</span>
+          </div>
+        </a>
+
+        <a class="card" href="projects/whisker-sensing.html">
+          <!-- <img class="card-media" src="images/whisker-sensing/cover.jpg" alt="Whisker array in the water channel"> -->
+          <div class="placeholder ratio-16x9">images/whisker-sensing/cover.jpg</div>
+          <div class="card-body">
+            <div class="eyebrow">Hydrodynamics Lab · 2025 to present</div>
+            <h3>Whisker Inspired Wake Sensing</h3>
+            <p>Fabricated biomimetic seal whiskers and studied how their vibrations encode wake patterns for object differentiation. Designed a motorized airfoil rig and wrote the water channel control and data acquisition in MATLAB.</p>
+            <div class="chips">
+              <span class="chip">MATLAB</span>
+              <span class="chip">Fabrication</span>
+              <span class="chip">APS DFD 2025</span>
+            </div>
+            <span class="card-link">View the research →</span>
+          </div>
+        </a>
+
+        <a class="card" href="projects/drosophibot.html">
+          <!-- <img class="card-media" src="images/drosophibot/cover.jpg" alt="Benchtop claw mockup"> -->
+          <div class="placeholder ratio-16x9">images/drosophibot/cover.jpg</div>
+          <div class="card-body">
+            <div class="eyebrow">NeuroMINT Lab REU · Summer 2026</div>
+            <h3>Passive Claw for Drosophibot II</h3>
+            <p>A passive claw and latch for the front legs of a fruit fly inspired hexapod. Body weight deflects a compliant silicone joint that closes the claw through a cable, and a pulsed solenoid releases a spring biased latch.</p>
+            <div class="chips">
+              <span class="chip">Fusion 360</span>
+              <span class="chip">Compliant mechanisms</span>
+              <span class="chip">Solenoid driver</span>
+            </div>
+            <span class="card-link">See the design process →</span>
+          </div>
+        </a>
+
+        <a class="card" href="projects/wheels-241.html">
+          <img class="card-media" src="images/wheels-241/wheel-assembly.jpg" alt="Two 3D printed test wheels with different tread patterns">
+          <div class="card-body">
+            <div class="eyebrow">ME 241 Mechanics Lab · Spring 2026</div>
+            <h3>W.H.E.E.L.S. Tread Traction Study</h3>
+            <p>Built a 2 meter single wheel testbed to measure how 3D printed tread patterns affect slip, traction efficiency, and energy use on sand, to inform wheel design for the club's Lunabotics rover.</p>
+            <div class="chips">
+              <span class="chip">Arduino</span>
+              <span class="chip">MATLAB</span>
+              <span class="chip">3D printing</span>
+              <span class="chip">Uncertainty analysis</span>
+            </div>
+            <span class="card-link">See the experiment →</span>
+          </div>
+        </a>
+
+        <a class="card" href="projects/coding-216-217.html">
+          <!-- <img class="card-media" src="images/coding-216-217/cover.jpg" alt="Robot arm simulation"> -->
+          <div class="placeholder ratio-16x9">images/coding-216-217/cover.jpg</div>
+          <div class="card-body">
+            <div class="eyebrow">Courses 216 and 217 · Coursework</div>
+            <h3>Robotics Coding Projects</h3>
+            <p>Programming projects from 216 and 217, including quaternion based inverse kinematics for a 6 DOF arm written in ROS2 C++ and run on a computing cluster.</p>
+            <div class="chips">
+              <span class="chip">ROS2 C++</span>
+              <span class="chip">Kinematics</span>
+              <span class="chip">Motion planning</span>
+            </div>
+            <span class="card-link">See the code →</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <section id="about" class="section wrap" style="padding-top: 72px;">
+      <div class="about">
+        <h2>About</h2>
+        <p>I'm a mechanical engineering student with a minor in electrical and computer engineering at the University of Rochester, graduating in May 2027. My work sits where mechanical design meets embedded systems, and I'm especially drawn to bio inspired robotics. [Add a sentence on what you're looking for next.]</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer wrap">
+    <a href="mailto:samuelscheinbach@gmail.com">samuelscheinbach@gmail.com</a>
+    <div class="links">
+      <a href="https://github.com/sscheinb">GitHub</a>
+      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
+      <a href="files/resume.pdf">Resume (PDF)</a>
+    </div>
+  </footer>
+
+</body>
+</html>
